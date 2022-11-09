@@ -1,0 +1,52 @@
+@font-face{
+    font-family: 'Roboto';
+    src:url(C:\Users\91959\Documents\webpack\src\font\roboto\Roboto-Medium.ttf) format('ttf');
+    font-display:swap;
+    font-weight:500;
+}
+@font-face{
+    font-family: 'Roboto';
+    src:url(C:\Users\91959\Documents\webpack\src\font\roboto\Roboto-Regular.ttf) format('ttf');
+    font-display:swap;
+    font-weight:400;
+}
+@font-face{
+    font-family: 'Poppins';
+    src:url(C:\Users\91959\Documents\webpack\src\font\poppines\Poppins-Medium.ttf) format('ttf');
+    font-display:swap;
+    font-weight:500;
+}
+@font-face{
+    font-family: 'Poppins';
+    src:url(C:\Users\91959\Documents\webpack\src\font\poppines\Poppins-SemiBold.ttf) format('ttf');
+    font-display:swap;
+    font-weight:600;
+}
+.title-xxl{
+    font-size:$fs-xxxl;
+    font-weight: 500;
+    line-height:44px;
+}
+.title-xl{
+    font-family:'poppines'sans-serif;
+    font-size:$fs-xxl;
+    font-weight:400;
+    line-height:40px;
+}
+.title-l{
+    font-family:'poppines'sans-serif;
+    font-size:$fs-xl;
+    font-weight:600;
+    line-height:20px
+}
+.title{
+    font-size:$fs-md;
+    font-weight:500;
+    line-height:16px
+    
+}
+.text{
+    font-size:$fs-sm;
+    font-weight:400;
+    line-height:12px;
+}

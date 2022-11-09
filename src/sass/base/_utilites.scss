@@ -1,0 +1,127 @@
+@each $num,$size in $spacing{
+    .mt-#{$num}{
+        margin-top:$size;
+    }
+}
+/*margin-bottom*/
+@each $num,$size in $spacing{
+    .mb-#{$num}{
+        margin-bottom:$size;
+    }
+}
+
+/*margin-right*/
+@each $num,$size in $spacing{
+    .mr-#{$num}{
+        margin-right:$size;
+    }
+}
+.mr-lg{
+    margin-right: 114px;
+}
+
+/*margin-left*/
+@each $num,$size in $spacing{
+    .ml-#{$num}{
+        margin-left:$size;
+    }
+} 
+/*padding*/
+.pr-16px{
+    padding-right: 16px;
+}
+.pv-md{
+    padding:$spacing-md 0;
+}
+/*display*/
+.d-inline-block{
+    display: inline-block;
+}
+.d-inline{
+    display: inline;
+}
+.d-block{
+    display: block;
+}
+/*text*/
+.tt-upper{
+    text-transform: uppercase;
+}
+.ta-center{
+    text-align: center;
+}
+
+.ta-left{
+    text-align: left;
+}
+
+/*vertical-align*/
+.ta-middle{
+    vertical-align: middle;
+}
+.ta-top{
+    vertical-align: top;
+}
+.ta-bottom{
+    vertical-align: bottom;
+}
+
+/* float */
+.float-l{
+    float:left;
+}
+.float-r{
+    float:right;
+}
+/* clearfix */
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+/*position*/
+.fixed{
+    position: fixed;
+    }
+.relative{
+    position:relative;
+}    
+.absolute{
+    position:absolute;
+}
+.sticky{
+    position:sticky;
+}
+/*inline-space-reset*/
+.ln-height-0{
+    line-height:0;
+}
+.fs-0{
+    font-size:0;
+}
+/*color*/
+.primary-grey{
+    color:$primary-grey;
+}
+.primary-white{
+    color:$primary-white;
+}
+.primary-yellow{
+    color:$primary-yellow;
+}
+.secondary-grey{
+    color:$secondary-grey;
+}
+.circle{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border:2px $primary-white solid;
+}
+.down-tri{
+    border:10px solid $primary-yellow;
+    width:10px;
+    height:0;
+
+
+}

@@ -1,0 +1,19 @@
+%btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: $fs-md;
+    font-weight: 500;
+}
+.btn-primary{
+    @extend %btn;
+    color:$primary-yellow;
+    border:1px solid $primary-yellow;
+    padding:6px 20px;
+}
+.btn-secondary{
+    @extend %btn;
+    color:$primary-white;
+    background-color: $primary-yellow;
+    padding:8px 16px;
+
+
+}
