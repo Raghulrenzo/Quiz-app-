@@ -1,7 +1,17 @@
+header{
+    position:fixed;
+    width:100%;
+}
 .header{
     padding: 20px 0;
     display:flex;
     justify-content: space-between;
+    &__link{
+        display: flex;
+        align-items: center;
+    }
+
+    
     a {
         display: inline-block;
     }

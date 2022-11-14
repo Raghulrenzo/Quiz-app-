@@ -2,6 +2,9 @@
     font-family: 'Poppins', sans-serif;
     font-size: $fs-md;
     font-weight: 500;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
 }
 .btn-primary{
     @extend %btn;
@@ -16,4 +19,24 @@
     padding:8px 16px;
 
 
+}
+.btn-primary::before,
+.btn-secondary::before {
+  content: "";
+  background-color: $primary-grey;
+  width:100%;
+  height: 0%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transition: 0.7s;
+}
+.btn-secondary:hover{
+    color:$primary-yellow;
+}
+
+.btn-primary:hover::before,
+.btn-secondary:hover::before {
+  height: 100%;
 }

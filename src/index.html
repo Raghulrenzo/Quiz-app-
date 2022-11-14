@@ -9,21 +9,64 @@
     
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container header">
-            <a href="javascript:void(0)" class="header__logo"><img src="https://i.ibb.co/WkVt0tf/QuizGrad.png" alt="QuizGrad-logo"></a>
-            <a href="javascript:void(0)" class="btn-primary">Login</a>
+            <a href="javascript:void(0)" class="header__logo ta-center"><img src="https://i.ibb.co/WkVt0tf/QuizGrad.png" alt="QuizGrad-logo"></a>
+            <ul class="header__link">
+                <li><a href="javascript:void(0)" class="link-primary mr-3 ta-middle">How it works?</a></li>
+                <li><a href="javascript:void(0)" class="link-primary mr-3 ta-middle">Features</a></li>
+                <li><a href="javascript:void(0)" class="link-primary mr-3 ta-middle">About us</a></li>
+                <li><a href="#" class="btn-primary ta-middle" onclick="my_login()">Login</a></li>
+            </ul>
         </div>  
     </header>
-    <section class="hero">
+    <section class="hero" id="222">
         <div class="container">
             <div class="hero__content">
                 <h1 class="hero__content--title title-xxl primary-grey mb-4"><span class="mr-lg">Learn</span> new concepts for each question</h1>
                 <p class="hero__content--text secondary-grey mb-4">We help you prepare for exams and quizes</p>
-                <a href="javascript:void(0)" class="btn-secondary d-inline-block mr-3">Start solving</a>
-                <a href="javascript:void(0)" class="primary-yellow"><span class="down-tri d-inline-block"></span>know more</a>
+                <a href="javascript:void(0)" class="btn-secondary d-inline-block ta-middle   mr-4">Start solving</a>
+                <a href="javascript:void(0)" class="primary-yellow ta-middle hero__content--more-btn">
+                    know more</a>
     
             </div>
+        </div>
+    </section>
+    <section class="login-page" id="333">
+        <div class="container-login">
+            <div class="login-page__wrapper">
+                <div class="login-page__content">
+                    <a href="javascript:void(0)" class="login-page__logo d-inline-block ml-3 mt-5 mb-5"><img src="https://i.ibb.co/W3Y0B76/Quiz-Grad-1.png" alt="QuizGrad-logo"></a>
+                    <p class="login-page__title secondary-grey ta-center mb-5"><span class=" d-block">Welcome  back!</span> 
+                        Please login/Signup to your account.</p>
+                    <form>
+                        <div class="login-wrapper">
+                            <span class="login-lable secondary-grey">Email Address</span>
+                            <input class="login-input" pattern="[a-z0-9._%+-]+@[a-    z0-9.-]+\.[a-z]{2,}$" type="text" placeholder=" " data-placeholder="E-mail" required>
+                            <span class="login-placeholder">hakeem@digital.com</span>
+                        </div>
+                        <div class="login-wrapper mb-3">
+                            <span class="login-lable secondary-grey">Password</span>
+                            <input class="login-input" type="password" placeholder=" " data-placeholder="E-mail" required>
+                            <span class="login-placeholder">*********</span>
+                        </div>
+                        <div class="login-wrapper__checkbox mb-6">
+                            <div class="checkbox d-inline-block">
+                                <input type="checkbox" id="Remember">
+                                <label for="Remember" class="primary-black">Remember Me</label>
+                            </div>
+                            <span class="d-inline-block primary-black">Forgot Password?</span>
+                        </div>       
+                    </form>
+                    <a href="javascript:void(0)" class="btn-secondary mr-4">Login</a>    
+                    <a href="javascript:void(0)" class="btn-primary">Signup</a>
+                    <div class="d-inline-block mt-5">
+                        <p class="primary-black d-inline-block mr-3">Or login with</p>
+                        <a href="javascript:void(0)" class="primary-yellow mr-3 ">Facebook</a>
+                        <a href="javascript:void(0)" class="primary-yellow ">Google</a>
+                    </div>    
+                </div>
+            </div>    
         </div>
     </section>
     <script src="./index.js"></script>

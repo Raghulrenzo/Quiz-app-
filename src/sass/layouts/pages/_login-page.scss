@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+.container-login{
+    background: linear-gradient(to right, #ffffff 50%,#F3F3F3 50%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.login-page{
+    height:100vh;
+    position: relative;
+    &__wrapper{
+        background-image: url("https://i.ibb.co/9Z3Cc70/Hands-Graduate.png");
+        background-repeat: no-repeat;
+        background-position:center right 60px;
+        background-size:266px 230px;
+        padding: 0 0 128px 0;
+        
+    }
+    &__logo{
+        height:54px ;
+        width:250px;
+        
+    }
+    &__title{
+        width:260px;
+    }
+    &__content{
+        width:360px;
+    }
+}
+.login{
+    &-wrapper{
+        max-width:346px;
+        width:100%;
+        position:relative;
+        border:2px solid $teritary-grey;
+        &__checkbox{
+            display: flex;
+            justify-content: space-between;
+        }  
+    }
+    &-lable{
+        position:absolute;
+        top:6px;
+        left:16px;
+    }
+    &-placeholder{
+      position:absolute;
+      top:24px;
+      left:16px;
+      color:$primary-yellow;
+      font-size: 10px;
+      font-weight:500;
+    }
+    &-input{
+        width:100%;
+        outline:none;
+        padding:24px 0 14px 16px;
+        border:0;
+        &:hover{
+            border-left:4px solid $primary-yellow;
+        }
+        &:focus + .login-placeholder{
+            display:none;
+          }
+      }  
+}
+.checkbox {
+    & input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+      }
+    & label {
+        position: relative;
+        cursor: pointer;
+    }
+    & label:before {
+        content:'';
+        background-color: transparent;
+        border: 2px solid $primary-yellow;
+        padding: 6px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    & input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 3px;
+    height: 10px;
+    border: solid $primary-yellow;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }  
+  }
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+ 
+  
+ 

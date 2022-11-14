@@ -112,6 +112,9 @@
 .secondary-grey{
     color:$secondary-grey;
 }
+.primary-black{
+    color:$primary-black;
+}
 .circle{
     width:20px;
     height:20px;
@@ -120,8 +123,11 @@
 }
 .down-tri{
     border:10px solid $primary-yellow;
-    width:10px;
+    width:8px;
     height:0;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
 
 
 }

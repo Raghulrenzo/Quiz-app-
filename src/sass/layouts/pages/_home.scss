@@ -9,7 +9,6 @@ a{
 }
 .hero{
     height: 100vh;
-    position:relative;
     .container
     {
     height:100vh ;
@@ -22,13 +21,25 @@ a{
         width:290px;
         position:absolute;
         top:50%;
-        transform: translateY(-50%);
-        
-    &--text{
-        padding:6px 0 6px 10px;
-        border-left:1px solid $primary-grey;
+        transform: translateY(-50%);    
+        &--text{
+            padding:6px 0 6px 10px;
+            border-left:1px solid $primary-grey;
+        }
+        &--more-btn{
+            position: relative;
+            &::before{
+            content:'';
+            position:absolute;
+            top:4px;
+            left:-16px;
+            border:6px solid $primary-yellow;
+            width:0;
+            height:0;
+            border-bottom: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-left: 6px solid transparent;
+           }
+        }
     }
-    }
-    
-
 }
