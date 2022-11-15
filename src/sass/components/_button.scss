@@ -5,6 +5,7 @@
     position: relative;
     z-index: 1;
     display: inline-block;
+    box-shadow: 0px 10px 22px -6px $primary-yellow;
 }
 .btn-primary{
     @extend %btn;

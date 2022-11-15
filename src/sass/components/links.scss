@@ -1,3 +1,8 @@
 .link-primary{
     color: $secondary-black;
+    &:hover{
+        color: $primary-yellow;
+        box-shadow: 4px 4px 4px $secondary-grey;
+
+    }
 }
