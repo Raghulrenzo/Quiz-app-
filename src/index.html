@@ -25,7 +25,7 @@
             <div class="hero__content">
                 <h1 class="hero__content--title title-xxl primary-grey mb-4"><span class="mr-lg">Learn</span> new concepts for each question</h1>
                 <p class="hero__content--text secondary-grey mb-4">We help you prepare for exams and quizes</p>
-                <a href="javascript:void(0)" class="btn-secondary d-inline-block ta-middle   mr-4">Start solving</a>
+                <a href="javascript:void(0)" class="btn-secondary d-inline-block ta-middle   mr-4" id="solving">Start solving</a>
                 <a href="javascript:void(0)" class="primary-yellow ta-middle hero__content--more-btn">
                     know more</a>
     
@@ -42,7 +42,7 @@
                     <form>
                         <div class="login-wrapper">
                             <span class="login-lable secondary-grey">Email Address</span>
-                            <input class="login-input" pattern="[a-z0-9._%+-]+@[a-    z0-9.-]+\.[a-z]{2,}$" type="text" placeholder=" " data-placeholder="E-mail" required>
+                            <input class="login-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" placeholder=" " data-placeholder="E-mail" required>
                             <span class="login-placeholder">hakeem@digital.com</span>
                         </div>
                         <div class="login-wrapper mb-3">
@@ -58,8 +58,8 @@
                             <span class="d-inline-block primary-black">Forgot Password?</span>
                         </div>       
                     </form>
-                    <a href="javascript:void(0)" class="btn-secondary mr-4">Login</a>    
-                    <a href="javascript:void(0)" class="btn-primary">Signup</a>
+                    <a href="javascript:void(0)" class="btn-secondary mr-4" id="login-page__login-btn" >Login</a>    
+                    <a href="javascript:void(0)" class="btn-primary" id="login-page__signup-btn">Signup</a>
                     <div class="d-inline-block mt-5">
                         <p class="primary-black d-inline-block mr-3">Or login with</p>
                         <a href="javascript:void(0)" class="primary-yellow mr-3 ">Facebook</a>
@@ -68,6 +68,82 @@
                 </div>
             </div>    
         </div>
+    </section>
+    <section class="select-topic" id="select_topic">
+        <div class="container select-topic__container">
+            <div class="select-topic__content">
+                <h2 class="title-xxl primary-grey mb-2 ta-center">Choose your favorite topic</h2>
+                <p class="primary-grey ta-center mb-3">Select more than 5 topics to start quiz</p>
+                <ul class="mb-5">
+                    <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-1" type="checkbox" value="value1">
+                        <label for="select-topic__checkbox-1">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-2" type="checkbox" value="value2">
+                        <label for="select-topic__checkbox-2">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-3" type="checkbox" value="value3">
+                        <label for="select-topic__checkbox-3">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-4" type="checkbox" value="value4">
+                        <label for="select-topic__checkbox-4">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-5" type="checkbox" value="value5">
+                        <label for="select-topic__checkbox-5">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-6" type="checkbox" value="value6">
+                        <label for="select-topic__checkbox-6">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-7" type="checkbox" value="value7">
+                        <label for="select-topic__checkbox-7">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-8" type="checkbox" value="value8">
+                        <label for="select-topic__checkbox-8">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-9" type="checkbox" value="value9">
+                        <label for="select-topic__checkbox-9">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-10" type="checkbox" value="value10">
+                        <label for="select-topic__checkbox-10">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-11" type="checkbox" value="value11">
+                        <label for="select-topic__checkbox-11">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-12" type="checkbox" value="value12">
+                        <label for="select-topic__checkbox-12">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-13" type="checkbox" value="value13">
+                        <label for="select-topic__checkbox-13">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-14" type="checkbox" value="value14">
+                        <label for="select-topic__checkbox-14">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                     <li class="select-topic__list">
+                        <input class="select-topic__checkbox" id="select-topic__checkbox-15" type="checkbox" value="value15">
+                        <label for="select-topic__checkbox-15">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                     </li>
+                </ul>
+                <div class="ta-right">
+                    <a href="javascript:void(0)" class="btn-secondary ">Start Quiz</a>
+                </div> 
+                <span class="close-icon">&nbsp;</span>
+            </div>
+                   
+        </div>
+        
     </section>
     <script src="./index.js"></script>
 

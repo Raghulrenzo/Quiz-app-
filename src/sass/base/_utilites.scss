@@ -54,6 +54,9 @@
 .ta-left{
     text-align: left;
 }
+.ta-right{
+    text-align: right;
+}
 
 /*vertical-align*/
 .ta-middle{
@@ -114,6 +117,12 @@
 }
 .primary-black{
     color:$primary-black;
+}
+.secondary-black{
+    color:$secondary-black;
+}
+.teritary-white{
+    color:$teritary-white;
 }
 .circle{
     width:20px;
