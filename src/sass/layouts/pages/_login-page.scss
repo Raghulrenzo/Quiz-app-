@@ -10,7 +10,6 @@
 }
 .login-page{
     height:100vh;
-    display: none;
     position: relative;
     &__wrapper{
         background-image: url("https://i.ibb.co/9Z3Cc70/Hands-Graduate.png");
@@ -27,6 +26,7 @@
     }
     &__title{
         width:260px;
+        line-height: 18px;
     }
     &__content{
         width:360px;
@@ -48,25 +48,17 @@
         top:6px;
         left:16px;
     }
-    &-placeholder{
-      position:absolute;
-      top:24px;
-      left:16px;
-      color:$primary-yellow;
-      font-size: 10px;
-      font-weight:500;
-    }
     &-input{
         width:100%;
         outline:none;
-        padding:24px 0 14px 16px;
+        padding:24px 0 12px 16px;
         border:0;
+        &::placeholder{
+            color:$primary-yellow;
+        }
         &:hover{
             border-left:4px solid $primary-yellow;
         }
-        &:focus + .login-placeholder{
-            display:none;
-          }
       }  
 }
 .checkbox {

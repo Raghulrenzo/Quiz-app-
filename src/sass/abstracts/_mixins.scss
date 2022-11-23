@@ -1,2 +1,15 @@
-
+@mixin left-triangle($width,$height,$border,$color) {
+    width: $width;
+    height: $height;
+    border-right: solid $border $color;
+    border-bottom: solid $border transparent;
+    border-top: solid $border transparent;
+}
+@mixin right-triangle($width,$height,$border,$color) {
+    width: $width; 
+    height: $height;
+    border-left: solid $border $color;
+    border-bottom: solid $border transparent;
+    border-top: solid $border transparent;
+  }
     

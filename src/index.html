@@ -42,20 +42,18 @@
                     <form>
                         <div class="login-wrapper">
                             <span class="login-lable secondary-grey">Email Address</span>
-                            <input class="login-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" placeholder=" " data-placeholder="E-mail" required>
-                            <span class="login-placeholder">hakeem@digital.com</span>
+                            <input class="login-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" placeholder="raghulragu@gmail.com " data-placeholder="E-mail" required>
                         </div>
                         <div class="login-wrapper mb-3">
                             <span class="login-lable secondary-grey">Password</span>
-                            <input class="login-input" type="password" placeholder=" " data-placeholder="E-mail" required>
-                            <span class="login-placeholder">*********</span>
+                            <input class="login-input" id="pass" type="password" placeholder="*********" data-placeholder="E-mail" required>
                         </div>
                         <div class="login-wrapper__checkbox mb-6">
                             <div class="checkbox d-inline-block">
                                 <input type="checkbox" id="Remember">
                                 <label for="Remember" class="primary-black">Remember Me</label>
                             </div>
-                            <span class="d-inline-block primary-black">Forgot Password?</span>
+                            <a href="javascript:void(0)" class="d-inline-block primary-black">Forgot Password?</a>
                         </div>       
                     </form>
                     <a href="javascript:void(0)" class="btn-secondary mr-4" id="login-page__login-btn" >Login</a>    
@@ -69,7 +67,7 @@
             </div>    
         </div>
     </section>
-    <section class="select-topic" id="select_topic">
+    <section class="select-topic display-none" id="select_topic">
         <div class="container select-topic__container">
             <div class="select-topic__content">
                 <h2 class="title-xxl primary-grey mb-2 ta-center">Choose your favorite topic</h2>
@@ -137,13 +135,74 @@
                      </li>
                 </ul>
                 <div class="ta-right">
-                    <a href="javascript:void(0)" class="btn-secondary ">Start Quiz</a>
+                    <a href="javascript:void(0)" class="btn-secondary " id="start-quiz">Start Quiz</a>
                 </div> 
                 <span class="close-icon">&nbsp;</span>
-            </div>
-                   
+            </div>            
         </div>
         
+    </section>
+    <section class="quiz-page display-none" id="quiz_page">
+        <div class="container ta-center">
+            <div class="quiz-step mb-2">
+                <div class="quiz-progress" id="quiz-progress"></div>
+                <span class="circle active">1</span>
+                <span class="circle active">2</span>
+                <span class="circle active">3</span>
+                <span class="circle active">4</span>
+                <span class="circle active">5</span>
+            </div>  
+            
+        </div>
+        <div class="quiz-page__container">
+            <h3 class="quiz-page__question primary-white">An interface design application that runs in the browser with team-based 
+                collaborative design projects
+            </h3>
+
+        </div>
+        <div class="container ta-center">
+            <div class="mt-4 mb-lg">
+                <div class="quiz-page__radio-box--option mr-3 ">
+                    <input type="radio" name="option" id="option1" class="quiz-page__radio-box--input">
+                    <label for="option1"  class="quiz-page__radio-box--label title-l">figma</label>
+                    <span class="quiz-page__radio--clip">A.</span>  
+                 </div>
+                <div class="quiz-page__radio-box--option mr-3">
+                   <input type="radio" name="option" id="option2" class="quiz-page__radio-box--input" > 
+                   <label for="option2"  class="quiz-page__radio-box--label title-l">adobe xd</label>
+                   <span class="quiz-page__radio--clip">B.</span>
+                </div>
+                <div class="quiz-page__radio-box--option mr-3">
+                  <input type="radio" name="option" id="option3" class="quiz-page__radio-box--input" >  
+                  <label for="option3" class="quiz-page__radio-box--label title-l">invision</label>
+                  <span class="quiz-page__radio--clip">C.</span>
+                </div>
+                <div class="quiz-page__radio-box--option mr-3">
+                  <input type="radio" name="option" id="option4" class="quiz-page__radio-box--input">   
+                  <label for="option4"  class="quiz-page__radio-box--label title-l">sketch</label>
+                  <span class="quiz-page__radio--clip">D.</span>
+                </div>
+            </div>
+            <div class="quiz-page__btn">
+                <button class="btn btn-secondary" id="prev" disabled><span class="left-triangle"></span> Previous</button>
+                <figure><img src="https://i.ibb.co/KFPYQbF/Time.png" alt=""></figure> 
+                <div>
+                    <button class="btn btn-secondary" id="next">Next <span class="right-triangle primary-white"></span></button>
+                    <a href="javascript:void(0)" class="link-secondary">Skip <span class="right-triangle-skip"></span></a>
+                </div>    
+            </div>            
+        </div>    
+    </section>
+    <section class="score display-none">
+        <div class="container score__container">
+            <div class="score__card">
+                <h3 class="score__card--title primary-white title-xxl">Your score</h3>
+                <p class="score__card--value primary-white ta-center">4</p>
+            </div>
+            <a href="javascript:void(0)" class="score__btn btn-secondary">Complete</a>
+        </div>
+
+
     </section>
     <script src="./index.js"></script>
 

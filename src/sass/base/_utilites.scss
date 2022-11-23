@@ -9,6 +9,9 @@
         margin-bottom:$size;
     }
 }
+.mb-lg{
+    margin-bottom:120px;
+}
 
 /*margin-right*/
 @each $num,$size in $spacing{
@@ -139,4 +142,10 @@
     border-left: 10px solid transparent;
 
 
+}
+.display-block{
+    display: block;
+}
+.display-none{
+    display:none;
 }

@@ -1,0 +1,33 @@
+.score{
+    height: 100vh;
+    background-color: $primary-grey;
+    position: relative;
+    &__container{
+        position:relative;
+        top:50%;
+        transform: translateY(-50%);
+        height: 420px;
+        background-image: url("https://i.ibb.co/YRhJ3Sc/Dayflow-Abstract-1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $primary-white;
+
+    }
+    &__card{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        &--value{
+            font-size: 168px;
+            font-weight: 700;
+            line-height: 196px;
+        }
+    }
+    &__btn{
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+
+}

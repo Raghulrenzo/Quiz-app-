@@ -5,7 +5,7 @@
     position: relative;
     z-index: 1;
     display: inline-block;
-    box-shadow: 0px 10px 22px -6px $primary-yellow;
+    // box-shadow: 0px 10px 22px -6px $primary-yellow;
 }
 .btn-primary{
     @extend %btn;
@@ -21,23 +21,7 @@
 
 
 }
-.btn-primary::before,
-.btn-secondary::before {
-  content: "";
-  background-color: $primary-grey;
-  width:100%;
-  height: 0%;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  transition: 0.7s;
-}
-.btn-secondary:hover{
-    color:$primary-yellow;
-}
 
-.btn-primary:hover::before,
-.btn-secondary:hover::before {
-  height: 100%;
+.btn-secondary:hover{
+    box-shadow: 0px 10px 22px -6px $primary-yellow;
 }
