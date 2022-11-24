@@ -31,7 +31,7 @@
   }
 }
 .quiz-progress{
-  background-color:yellow;
+  background-color:$primary-yellow;
   position:absolute;
   top:50%;
   left:0;
@@ -54,7 +54,7 @@
   justify-content:center;
   transition: 0.4 ease;
   &.active {
-    border-color:yellow;
+    border-color:$primary-yellow;
   }
 }
 .quiz-page__btn{
@@ -62,9 +62,6 @@
   justify-content: space-between;
 }
 .btn {
-  background-color:yellew;
-  color:$primary-white;
-  border-radius:6px;
   border:0;
   cursor:pointer; 
 }
@@ -88,6 +85,9 @@
   padding: 30px 20px;
   text-transform: uppercase;
   display: inline-block;
+}
+.quiz-page__radio-box--label:hover{
+  cursor: pointer;
 }
 .quiz-page__radio-box--input:checked ~ label {
   background-color:$primary-yellow;

@@ -1,5 +1,6 @@
 import "./sass/main.scss";
 var btn = document.getElementById('solving').addEventListener('click',btn_click);
+var btn = document.getElementById('login').addEventListener('click',btn_click);
  var dis = document.getElementById('login-page').classList.add('display-none');
  
 
@@ -9,17 +10,32 @@ function btn_click(){
     document.getElementById('hero').classList.add('display-none');
 };
 
-var btn1 = document.getElementById('login-page__login-btn').addEventListener('click',display_select_topic);
+var btn1 = document.getElementById('login-page__login-btn').addEventListener('click',validation);
 var btn2 = document.getElementById('login-page__signup-btn').addEventListener('click',validation);
-function validation(){
-     var login_pass = document.getElementById('pass');
-     if( login_pass.value ==  ""){
-      alert("Enter valid password");
-     }
-     else{
-      display_select_topic();
-     }
+//email and password validation  
+function validation() {
+  let form = document.getElementById('form')
+  let email = document.getElementById('email').value
+  let psw = document.getElementById('psw').value
+  let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  let psw_pattern = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+  if ((email.match(pattern)) && (psw.match(psw_pattern))) {
+    display_select_topic();
+   }
+  else{
+    if (email.match(pattern)){
+      
+    }
+    else{
+        var red_border = document.getElementById('invalid-email').classList.remove("display-none");
+    }
+    alert("Enter valid email example:prachitha@gmail.com and Enter valid password your password should contain atlest one uppercase,one lowercase,one number,one special character ");
+    
+  }  
 }
+
+
+ 
  
 function display_select_topic(){
  

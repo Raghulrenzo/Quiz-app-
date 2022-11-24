@@ -16,7 +16,7 @@
                 <li><a href="javascript:void(0)" class="link-primary mr-3 ta-middle">How it works?</a></li>
                 <li><a href="javascript:void(0)" class="link-primary mr-3 ta-middle">Features</a></li>
                 <li><a href="javascript:void(0)" class="link-primary mr-3 ta-middle">About us</a></li>
-                <li><a href="#" class="btn-primary ta-middle" id="button">Login</a></li>
+                <li><a href="#" class="btn-primary ta-middle" id="login">Login</a></li>
             </ul>
         </div>  
     </header>
@@ -39,14 +39,15 @@
                     <a href="javascript:void(0)" class="login-page__logo d-inline-block ml-3 mt-5 mb-5"><img src="https://i.ibb.co/W3Y0B76/Quiz-Grad-1.png" alt="QuizGrad-logo"></a>
                     <p class="login-page__title secondary-grey ta-center mb-5"><span class=" d-block">Welcome  back!</span> 
                         Please login/Signup to your account.</p>
-                    <form>
-                        <div class="login-wrapper">
+                    <form class="form">
+                        <div class="login-wrapper" >
                             <span class="login-lable secondary-grey">Email Address</span>
-                            <input class="login-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" placeholder="raghulragu@gmail.com " data-placeholder="E-mail" required>
+                            <input class="login-input" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" placeholder="raghulragu@gmail.com " data-placeholder="E-mail" required>
+                            <span class="display-none email-invalid" id="email-invalid">Invalid Email Id</span>
                         </div>
                         <div class="login-wrapper mb-3">
                             <span class="login-lable secondary-grey">Password</span>
-                            <input class="login-input" id="pass" type="password" placeholder="*********" data-placeholder="E-mail" required>
+                            <input class="login-input" id="psw" type="password" placeholder="*********" data-placeholder="E-mail" required>
                         </div>
                         <div class="login-wrapper__checkbox mb-6">
                             <div class="checkbox d-inline-block">
@@ -75,39 +76,39 @@
                 <ul class="mb-5">
                     <li class="select-topic__list">
                         <input class="select-topic__checkbox" id="select-topic__checkbox-1" type="checkbox" value="value1">
-                        <label for="select-topic__checkbox-1">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                        <label for="select-topic__checkbox-1">TagBadge</label> <span class="cross-mark">&nbsp;</span>
                      </li>
                      <li class="select-topic__list">
                         <input class="select-topic__checkbox" id="select-topic__checkbox-2" type="checkbox" value="value2">
-                        <label for="select-topic__checkbox-2">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                        <label for="select-topic__checkbox-2">TagBadge</label> <span class="cross-mark">&nbsp;</span>
                      </li>
                      <li class="select-topic__list">
                         <input class="select-topic__checkbox" id="select-topic__checkbox-3" type="checkbox" value="value3">
-                        <label for="select-topic__checkbox-3">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                        <label for="select-topic__checkbox-3">TagBadge</label> <span class="cross-mark">&nbsp;</span>
                      </li>
                      <li class="select-topic__list">
                         <input class="select-topic__checkbox" id="select-topic__checkbox-4" type="checkbox" value="value4">
-                        <label for="select-topic__checkbox-4">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                        <label for="select-topic__checkbox-4">TagBadge</label> <span class="cross-mark">&nbsp;</span>
                      </li>
                      <li class="select-topic__list">
                         <input class="select-topic__checkbox" id="select-topic__checkbox-5" type="checkbox" value="value5">
-                        <label for="select-topic__checkbox-5">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                        <label for="select-topic__checkbox-5">TagBadge</label> <span class="cross-mark">&nbsp;</span>
                      </li>
                      <li class="select-topic__list">
                         <input class="select-topic__checkbox" id="select-topic__checkbox-6" type="checkbox" value="value6">
-                        <label for="select-topic__checkbox-6">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                        <label for="select-topic__checkbox-6">TagBadge</label> <span class="cross-mark">&nbsp;</span>
                      </li>
                      <li class="select-topic__list">
                         <input class="select-topic__checkbox" id="select-topic__checkbox-7" type="checkbox" value="value7">
-                        <label for="select-topic__checkbox-7">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                        <label for="select-topic__checkbox-7">TagBadge</label> <span class="cross-mark">&nbsp;</span>
                      </li>
                      <li class="select-topic__list">
                         <input class="select-topic__checkbox" id="select-topic__checkbox-8" type="checkbox" value="value8">
-                        <label for="select-topic__checkbox-8">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                        <label for="select-topic__checkbox-8">TagBadge</label> <span class="cross-mark">&nbsp;</span>
                      </li>
                      <li class="select-topic__list">
                         <input class="select-topic__checkbox" id="select-topic__checkbox-9" type="checkbox" value="value9">
-                        <label for="select-topic__checkbox-9">Checkbox</label> <span class="cross-mark">&nbsp;</span>
+                        <label for="select-topic__checkbox-9">TagBadge</label> <span class="cross-mark">&nbsp;</span>
                      </li>
                      <li class="select-topic__list">
                         <input class="select-topic__checkbox" id="select-topic__checkbox-10" type="checkbox" value="value10">
@@ -184,7 +185,9 @@
                 </div>
             </div>
             <div class="quiz-page__btn">
-                <button class="btn btn-secondary" id="prev" disabled><span class="left-triangle"></span> Previous</button>
+                <div>
+                    <button class="btn btn-secondary" id="prev" disabled><span class="left-triangle"></span> Previous</button>
+                </div>    
                 <figure><img src="https://i.ibb.co/KFPYQbF/Time.png" alt=""></figure> 
                 <div>
                     <button class="btn btn-secondary" id="next">Next <span class="right-triangle primary-white"></span></button>
