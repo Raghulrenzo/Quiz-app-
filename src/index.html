@@ -42,8 +42,8 @@
                     <form class="form">
                         <div class="login-wrapper" >
                             <span class="login-lable secondary-grey">Email Address</span>
-                            <input class="login-input" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" placeholder="raghulragu@gmail.com " data-placeholder="E-mail" required>
-                            <span class="display-none email-invalid" id="email-invalid">Invalid Email Id</span>
+                            <input class="login-input" id="email" onkeydown="email_invalid()" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" placeholder="raghulragu@gmail.com " data-placeholder="E-mail" required>
+                            <span class="display-none email-invalid" id="emailtext">rrrrrrrrrrrrr</span>
                         </div>
                         <div class="login-wrapper mb-3">
                             <span class="login-lable secondary-grey">Password</span>

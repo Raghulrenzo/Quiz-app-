@@ -9,13 +9,27 @@ function btn_click(){
     document.getElementById('login-page').classList.add('display-block');
     document.getElementById('hero').classList.add('display-none');
 };
+ function email_invalid(){
+  let form = document.getElementById('form')
+  let email = document.getElementById('email').value
+  let text = document.getElementById('emailtext')
+  let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  
+  if (!email.match(pattern)) {
+    text.classList.remove("display-none")
+
+  }
+  
+ }
 
 var btn1 = document.getElementById('login-page__login-btn').addEventListener('click',validation);
 var btn2 = document.getElementById('login-page__signup-btn').addEventListener('click',validation);
+
 //email and password validation  
 function validation() {
   let form = document.getElementById('form')
   let email = document.getElementById('email').value
+  let text = document.getElementById('text')
   let psw = document.getElementById('psw').value
   let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
   let psw_pattern = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
@@ -23,13 +37,6 @@ function validation() {
     display_select_topic();
    }
   else{
-    if (email.match(pattern)){
-      
-    }
-    else{
-        var red_border = document.getElementById('invalid-email').classList.remove("display-none");
-    }
-    alert("Enter valid email example:prachitha@gmail.com and Enter valid password your password should contain atlest one uppercase,one lowercase,one number,one special character ");
     
   }  
 }
